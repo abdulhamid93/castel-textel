@@ -28,7 +28,7 @@
             <h3>{{$shortcode->subtitle}}</h3>
             <div class="row">
                 @for ($i = 1; $i <= 6; $i++)
-                    <div class="col-2">
+                    <div class="col-md-2">
                         <div class="s-container">
                             <img width="100%" alt="" src="{{ RvMedia::getImageUrl($shortcode->{'service_image' . $i}, 'full') }}" class="primary-image"/>
                             <p>{!!  $shortcode->{'service' . $i} !!}</p>

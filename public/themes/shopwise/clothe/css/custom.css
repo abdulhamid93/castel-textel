@@ -291,8 +291,24 @@ a.btn-def:hover, a.btn-def.btn-white:hover, a.btn-def.btn2:hover {
         min-height: 320px;
     }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .slider-area .single-slider{
         min-height: 320px;
+    }
+    .new-arrival-area .heading-title p {
+        font-size: 16px;
+    }
+    .pm-section .heading-title h2 {
+        color: #343726 !important;
+        font-size: 28px;
+    }
+    .pm-section .heading-title p {
+        font-size: 16px;
+    }
+    .sticky .logo {
+        padding: 5px 0;
+    }
+    .primary-image.scale-img{
+        width: 100%;
     }
 }
