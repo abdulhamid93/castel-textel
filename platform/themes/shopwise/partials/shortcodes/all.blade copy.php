@@ -1,0 +1,1 @@
+d:\clients\The Castel\textel\platform\themes\shopwise\partials\shortcodes\all.blade copy.php
