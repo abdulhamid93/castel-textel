@@ -5,7 +5,7 @@
             <div class="col-lg-6 text-center">
                 <div class="heading-title heading-style pos-rltv mb-50  ">
                     <h2 class="uppercase text-left">{{$shortcode->title}}</h2>
-                    <p class="text-left">{{$shortcode->subtitle}}</p>
+                    <p class="text-left">{!!$shortcode->subtitle!!}</p>
                     <div><a style="margin-right:30px" href="{{$shortcode->url1}}" class="btn-def" tabindex="0">{{__('Read More')}}</a>
                         <img width="120" alt="" src="{{ RvMedia::getImageUrl($shortcode->logo, 'full') }}"
                              class="secondary-image"></div>

@@ -49,7 +49,7 @@
             <div class="header-top-bar black-bg clearfix">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6 col-6">
+                        <div class="col-md-3 col-sm-12 col-lg-6">
                             <div class="login-register-area">
                                 <ul>
                                     <li><a href="/contact"><i class="fa fa-envelope"></i>{{ __("Contact Us") }}</a></li>
