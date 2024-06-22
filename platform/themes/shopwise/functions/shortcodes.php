@@ -516,6 +516,15 @@ app()->booted(function () {
         return Theme::partial('shortcodes.product-home-admin-config', compact('attributes'));
     });
 
+    add_shortcode('img-box', __('Home Img Box'), __('Home Img Box'), function (Shortcode $shortcode) {
+
+        return Theme::partial('shortcodes.img-box', compact('shortcode'));
+    });
+    shortcode()->setAdminConfig('img-box', function (array $attributes) {
+
+        return Theme::partial('shortcodes.img-box-admin-config', compact('attributes'));
+    });
+
     add_shortcode('about', __('about'), __('about'), function (Shortcode $shortcode) {
 
         return Theme::partial('shortcodes.about', compact('shortcode'));

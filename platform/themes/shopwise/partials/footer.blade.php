@@ -60,12 +60,13 @@
                         <ul>
                             @php
                                 $products = get_products(['take' => 4]);
+
                             @endphp
 
                             @foreach($products as $product)
                                 <li>
                                     <a href="{{ $product->url }}">
-                                        <img src="{{ RvMedia::getImageUrl($product->image, 'thumb', false, RvMedia::getDefaultImage()) }}" alt="{{ $product->name }}">
+                                        <img src="{{ RvMedia::getImageUrl($product->image, 'full', false, RvMedia::getDefaultImage()) }}" alt="{{ $product->name }}">
                                     </a>
                                 </li>
                             @endforeach

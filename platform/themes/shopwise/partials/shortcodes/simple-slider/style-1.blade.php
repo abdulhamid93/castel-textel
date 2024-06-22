@@ -16,7 +16,7 @@
                     <h1 class="uppercase pos-rltv underline">{{ $slider->title }}</h1>
                     <h4>{{ $slider->sub_title }}</h4>
                     <p>{{ $slider->description }}</p>
-                    <a href="#" class="btn-def btn-white">Shop Now</a>
+                    <a href="{{ $slider->link }}" class="btn-def btn-white">{{__('Shop Now')}}</a>
                 </div>
             </div>
                 @endforeach

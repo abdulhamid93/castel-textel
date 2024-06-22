@@ -16,6 +16,10 @@
     <label class="form-label">{{ __('FABRIC') }}</label>
     <textarea name="fabric" class="form-control" placeholder="{{ __('fabric') }}" rows="3">{{ Arr::get($attributes, 'fabric') }}</textarea>
 </div>
+<div class="mb-3">
+    <label class="form-label">URL 1</label>
+    <input type="text" name="url1" value="{{ Arr::get($attributes, 'url1') }}" class="form-control" placeholder="URL 1">
+</div>
 <hr>
 <div class="mb-3">
     <label class="form-label">Image 2 (370x370)</label>
@@ -25,19 +29,27 @@
     <label class="form-label">{{ __('FABRIC 2') }}</label>
     <textarea name="fabric2" class="form-control" placeholder="{{ __('fabric2') }}" rows="3">{{ Arr::get($attributes, 'fabric2') }}</textarea>
 </div>
+<div class="mb-3">
+    <label class="form-label">URL 2</label>
+    <input type="text" name="url2" value="{{ Arr::get($attributes, 'url2') }}" class="form-control" placeholder="URL 2">
+</div>
 <hr>
 <div class="mb-3">
     <label class="form-label">Image 3 (370x370)</label>
     {!! Form::mediaImage('image3', Arr::get($attributes, 'image3')) !!}
 </div>
 <div class="mb-3">
-    <label class="form-label">{{ __('FABRIC 2') }}</label>
+    <label class="form-label">{{ __('FABRIC 3') }}</label>
     <textarea name="fabric3" class="form-control" placeholder="{{ __('fabric3') }}" rows="3">{{ Arr::get($attributes, 'fabric3') }}</textarea>
+</div>
+<div class="mb-3">
+    <label class="form-label">URL 3</label>
+    <input type="text" name="url3" value="{{ Arr::get($attributes, 'url3') }}" class="form-control" placeholder="URL 3">
 </div>
 <hr>
 <div class="mb-3">
-    <label class="form-label">URL 1</label>
-    <input type="text" name="url1" value="{{ Arr::get($attributes, 'url1') }}" class="form-control" placeholder="URL 1">
+    <label class="form-label">Btn URL</label>
+    <input type="text" name="url4" value="{{ Arr::get($attributes, 'url4') }}" class="form-control" placeholder="URL 4">
 </div>
 
 

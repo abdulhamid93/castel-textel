@@ -114,11 +114,11 @@
                         <div class="single-prodcut-img product-overlay pos-rltv">
                             <a href="{{ $product->url }}">
                                 <img alt="{{ $product->name }}"
-                                    src="{{ RvMedia::getImageUrl($product->image, 'medium', false, RvMedia::getDefaultImage()) }}"
+                                    src="{{ RvMedia::getImageUrl($product->image, 'full', false, RvMedia::getDefaultImage()) }}"
                                     class="primary-image">
                                 @if ($product->secondary_image)
                                     <img alt="{{ $product->name }}"
-                                        src="{{ RvMedia::getImageUrl($product->secondary_image, 'medium', false, RvMedia::getDefaultImage()) }}"
+                                        src="{{ RvMedia::getImageUrl($product->secondary_image, 'full', false, RvMedia::getDefaultImage()) }}"
                                         class="secondary-image">
                                 @endif
                             </a>
@@ -162,7 +162,7 @@
     <div class="recent-prodcut-wraper total-rectnt-slider">
 
         @php
-            $relatedProducts = get_featured_products();
+            $relatedProducts = get_featured_products(['take' => 5]);
         @endphp
 
         <div class="single-rectnt-slider">
@@ -216,9 +216,7 @@
 
 
 <!--single aside start-->
-<aside class="single-aside add-aside">
-    <a href="single-product.html"><img src="/storage/images/004-2.png" alt="" style="width: 100px"></a>
-</aside>
+
 <!--single aside end-->
 
 {{-- <aside class="widget" style="border: none">

@@ -29,7 +29,7 @@
                         <div class="single-product col-lg-4">
                             <div class="product-img bg-sec">
                                 <div class="single-prodcut-img  product-overlay pos-rltv">
-                                    <a href="{{$shortcode->url1}}"> <img alt="" src="{{ RvMedia::getImageUrl($shortcode->image2, 'full') }}"
+                                    <a href="{{$shortcode->url2}}"> <img alt="" src="{{ RvMedia::getImageUrl($shortcode->image2, 'full') }}"
                                                                          class="primary-image"> <img alt="" src="{{ RvMedia::getImageUrl($shortcode->image2, 'full') }}"
                                                                                                      class="secondary-image"> </a>
                                 </div>
@@ -41,7 +41,7 @@
                         <div class="single-product col-lg-4">
                             <div class="product-img bg-sec">
                                 <div class="single-prodcut-img  product-overlay pos-rltv">
-                                    <a href="{{$shortcode->url1}}"> <img alt="" src="{{ RvMedia::getImageUrl($shortcode->image3, 'full') }}"
+                                    <a href="{{$shortcode->url3}}"> <img alt="" src="{{ RvMedia::getImageUrl($shortcode->image3, 'full') }}"
                                                                          class="primary-image"> <img alt="" src="{{ RvMedia::getImageUrl($shortcode->image3, 'full') }}"
                                                                                                      class="secondary-image"> </a>
                                 </div>
